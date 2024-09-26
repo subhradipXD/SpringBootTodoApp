@@ -34,14 +34,6 @@
       aria-label="default input example"
       path="id"
     />
-
-    <form:input
-      class="form-control"
-      type="hidden"
-      placeholder="Default input"
-      aria-label="default input example"
-      path="done"
-    />
     <button type="submit" class="btn btn-success mt-3">Submit</button>
     <p class="mt-2"></p>
   </form:form>

@@ -14,9 +14,9 @@ public class TodoService {
     private static List<Todo> todos = new ArrayList<>();
     private static int id = 0;
     static {
-        todos.add(new Todo("korte hobe 1", false, ++id, LocalDate.now().plusYears(1), "Subhradip"));
-        todos.add(new Todo("korte hobe 2", false, ++id, LocalDate.now().plusYears(1), "Subhradip"));
-        todos.add(new Todo("korte hobe 3", false, ++id, LocalDate.now().plusYears(1), "Subhradip"));
+        todos.add(new Todo("korte hobe 1", ++id, LocalDate.now().plusYears(1), "Subhradip"));
+        todos.add(new Todo("korte hobe 2", ++id, LocalDate.now().plusYears(1), "Subhradip"));
+        todos.add(new Todo("korte hobe 3", ++id, LocalDate.now().plusYears(1), "Subhradip"));
 
     }
 
@@ -27,7 +27,7 @@ public class TodoService {
     }
 
     public void addTodo(String description, boolean done, LocalDate targetDate, String username) {
-        Todo todo = new Todo(description, done, ++id, targetDate, username);
+        Todo todo = new Todo(description, ++id, targetDate, username);
         todos.add(todo);
     }
 

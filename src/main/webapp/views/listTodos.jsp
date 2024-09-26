@@ -9,7 +9,6 @@
         <!-- <th>Id</th> -->
         <th>Description</th>
         <th>Target Date</th>
-        <th>Is Done?</th>
         <th>UPDATE</th>
         <th>DELETE</th>
       </tr>
@@ -20,7 +19,6 @@
           <!-- <td>${todo.id}</td> -->
           <td>${todo.description}</td>
           <td>${todo.targetDate}</td>
-          <td>${todo.done}</td>
           <td>
             <a href="update-todo?id=${todo.id}" class="btn btn-warning"
               >UPDATE</a
